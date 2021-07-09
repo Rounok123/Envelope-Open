@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Index File</title>
+	<style>
+		body
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.env
+		{
+			width: 35rem;
+			height: 24rem;
+			position: absolute;
+			background-color: #56538a;
+			transform-style: preserve-3d;
+			cursor: pointer;
+			margin-top: 16rem;
+		}
+		.env:before
+		{
+			content: "";
+			position: absolute;
+			border-left: 17.5rem solid #4134b9;
+			border-right: 17.5rem solid #5644fa;
+			border-top: 12rem solid transparent;
+			border-bottom: 12rem solid #5644fa;
+			z-index: 2;
+
+		}
+		.env .cover
+		{
+			position: absolute;
+			border-left: 17.5rem solid transparent;
+			border-right: 17.5rem solid transparent;
+			border-top: 12rem solid #3d2479;
+			border-bottom: 12rem solid transparent;
+			transform-origin: top;
+			transition:1s 1s ease;
+			z-index: 1;
+		}
+		.env:hover .cover
+		{
+			transform: rotateX(180deg);
+			transition: 1.5s ease; 
+		}
+		.env .image
+		{
+			position: absolute;
+			width:33rem;
+			left: 1rem;
+			height: 22rem;
+			background-size: cover;
+			background-position: top center;
+			top: .5rem;
+			background-image: url("./tree-736885__480.jpg");
+			transition: 1.5s ease; 
+		}
+		.env:hover .image
+		{
+			top: -10rem;
+			transition: 2s 1.5s ease; 
+		}
+	</style>
+</head>
+<body>
+
+	<div class="env">
+		<div class="cover"> </div>
+		<div class="image"> </div>
+	</div>
+
+</body>
+</html>
